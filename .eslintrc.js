@@ -22,5 +22,15 @@ module.exports = {
     "rules": {
         "linebreak-style": ["error", "windows"],
         "semi": ["error", "never"]
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "moduleDirectory": [
+                    "node_modules",
+                    "./"
+                ]
+            }
+        }
     }
 };

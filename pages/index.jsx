@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Head from 'next/head'
+import Footer from 'common/footer'
 
 const Index = () => (
   <div id="root">
@@ -55,6 +56,7 @@ const Index = () => (
         font-family: 'La Belle Aurore', cursive;
       }`}
     </style>
+    <Footer />
   </div>
 )
 
