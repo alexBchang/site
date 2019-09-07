@@ -1,11 +1,11 @@
 import * as React from 'react'
-import Head from 'next/head'
 import Footer from 'common/footer'
+import Head from 'common/head'
 
 const Index = () => (
   <div id="root">
     <Head>
-      <link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore|Roboto:300&display=swap" rel="stylesheet" />
+      <title>Alex Chang | Home</title>
     </Head>
     <style jsx global>
       {`
