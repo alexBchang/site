@@ -5,10 +5,16 @@ const Footer = () => (
   <>
     <div className="footer">
       <Link href="/">
-        Home
+        A+V
       </Link>
       <Link href="/gallery">
-        Gallery
+        gallery
+      </Link>
+      <Link href="/about">
+        about
+      </Link>
+      <Link href="/contact">
+        contact
       </Link>
     </div>
     <style jsx>
