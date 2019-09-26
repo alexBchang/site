@@ -4,11 +4,23 @@ module.exports = {
         "es6": true,
         "node": true
     },
-    "extends": "airbnb",
+    "extends": [
+        'airbnb',
+    ],
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
     },
+    "overrides": [
+        {
+            "files": ["*.ts", "*.tsx"],
+            "rules": {
+                "@typescript-eslint/explicit-function-return-type": "off",
+                "import/no-unresolved": "off",
+                "react/jsx-filename-extension": "off",
+            }
+        }
+    ],
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -17,11 +29,12 @@ module.exports = {
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        '@typescript-eslint',
+        'react'
     ],
     "rules": {
         "linebreak-style": ["error", "windows"],
-        "semi": ["error", "never"]
+        "semi": ["error", "never"],
     },
     "settings": {
         "import/resolver": {

@@ -1,20 +1,21 @@
 import * as React from 'react'
+
 import Link from 'next/link'
 
 const Footer = () => (
   <>
     <div className="footer">
       <Link href="/">
-        A+V
+        <a href="/">A+V</a>
       </Link>
       <Link href="/gallery">
-        gallery
+        <a href="/gallery">gallery</a>
       </Link>
       <Link href="/about">
-        about
+        <a href="/about">about</a>
       </Link>
       <Link href="/contact">
-        contact
+        <a href="/contact">contact</a>
       </Link>
     </div>
     <style jsx>
